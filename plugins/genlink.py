@@ -40,10 +40,10 @@ async def gen_link_s(bot, message):
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/cinemala_com1/10 https://t.me/cinemala_com1/20</code>.")
+        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/HYBRID_Movies/10 https://t.me/HYBRID_Movies/20</code>.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/cinemala_com1/10 https://t.me/cinemala_com1/20</code>.")
+        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/HYBRID_Movies/10 https://t.me/HYBRID_Movies/20</code>.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
@@ -57,14 +57,14 @@ async def gen_link_batch(bot, message):
     match = regex.match(last)
     if not match:
         return await message.reply('Invalid link')
-    l_chat_id = match.group(4)
+    l_chat_idatch.group(4)
     l_msg_id = int(match.group(5))
     if l_chat_id.isnumeric():
         l_chat_id  = int(("-100" + l_chat_id))
 
     if f_chat_id != l_chat_id:
         return await message.reply("Chat ids not matched.")
-    try:
+    try: = m
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
         return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
