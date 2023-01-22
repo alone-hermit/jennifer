@@ -57,14 +57,14 @@ async def gen_link_batch(bot, message):
     match = regex.match(last)
     if not match:
         return await message.reply('Invalid link')
-    l_chat_idatch.group(4)
+    l_chat_id = match.group(4)
     l_msg_id = int(match.group(5))
     if l_chat_id.isnumeric():
         l_chat_id  = int(("-100" + l_chat_id))
 
     if f_chat_id != l_chat_id:
         return await message.reply("Chat ids not matched.")
-    try: = m
+    try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
         return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
