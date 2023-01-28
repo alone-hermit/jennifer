@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://telegra.ph/file/e265ed0a09295c6077f39.jpg" alt="Elsa">
-</p>
 <h1 align="center">
   <b>Elsa</b>
 </h1>
@@ -82,7 +79,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To Heroku</summary>
 <br>
 <p>
-<a href="https://heroku.com/deploy?template=https://github.com/Devil-Botz/Elsa">
+<a href="https://heroku.com/deploy?template=https://github.com/hybridvamp/Elsa">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p></details>
