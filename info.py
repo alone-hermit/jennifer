@@ -78,7 +78,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Elsa")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-MONGO_URL = os.environ.get('MONGO_URL', "")
+MONGO_URL = os.environ.get('MONGO_URL', "mongodb://cljqyos890012ajmgbdqvcs2i:uK8Jv3ENBv9YnOv4GuevPxYi@104.237.3.174:9005/?readPreference=primary&ssl=false")
 
 #Downloader
 DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
@@ -97,7 +97,7 @@ APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 # Others
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
-PORT = os.environ.get("PORT", "8080")
+PORT = os.environ.get("PORT", "8600")
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
 S_GROUP = environ.get('S_GROUP',"https://t.me/Elsasupportgp")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/+1iWSCrpI_083MDM1")
